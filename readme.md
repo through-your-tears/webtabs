@@ -8,3 +8,5 @@ docker-compose -f docker-compose.prod.yml exec web python manage.py migrate --no
 docker-compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
 ```
 После перейти на http://localhost/swagger/
+
+В swagger authorization необходимо вставить в поле Token(apiKey) по приципу - Token {access token}, example "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZXhwIjoxNjkyMjUxMjkxfQ.aJhEZBktpWQCFs5RK0MREgc6--U8ogqRz6UgFD9RHu8"
